@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="logo">Logo</div>
+        <div class="menu">
+            <ul>
+                <!-- creezi o pagina contact html si o linkuiesti -->
+                <li><a href="C:\Facultate\web\main.html">Home</a></li>
+                <li><a href="C:\Facultate\web\about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <slidex>
+        <div class="plant-carousel">
+            <div class="slide fade">
+                <a href="https://www.google.com/"><img class="plant-1" src="images/descarcare1.jpg" alt=""></a>
+                 <div class="plant-caption">
+                    <h1>Workwear</h1>
+                </div>
+            </div>
+            <div class="slide fade">
+                <!-- schimbi si tu imaginile pe aici-->
+                <img class="plant-2" src="images/descarcare1.jpg" alt="">
+                <div class="plant-caption">
+                    <h1>tomato</h1>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img class="plant-3" src="images/descarcare1.jpg" alt="">
+                <div class="plant-caption">
+                    <h1>kiwi</h1>
+                </div>
+            </div>
+            <a class="prev" onclick="nextSlide(-1)"></a>
+            <a class="next" onclick="nextSlide(1)"></a>
+            <br>
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </slidex>
+    <div class="main-content">
+    </div>
+    <div class="contact">
+        <div class="contact-text">
+            <div class="contact-items">
+                <h2>Contact Us</h2>
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Email">
+                <textarea cols="20" rows="20" placeholder="Your Message here"></textarea>
+                <a href="">Submit</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© Copyright 2021 'Site Name</p>
+    </footer>
+</body>
+<script src="main.js"></script>
+
+</html>
