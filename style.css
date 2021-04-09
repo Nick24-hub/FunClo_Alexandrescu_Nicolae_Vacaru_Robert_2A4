@@ -262,7 +262,7 @@ small{
     text-align: center;
 }
 
-ul{
+.footer-col3 ul,.footer-col4 ul{
     list-style-type: none;
 }
 
