@@ -29,17 +29,73 @@
                 <img src="images\menu-icon.png" class="menu-icon" onclick="menutoggle()">
             </div>
         </div>
+
+        <!-- single product details -->
+
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col2">
+                    <img src="images\product1.jpg" width="100%" id="ProductImg">
+
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="images\product1.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images\product1_small1.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images\product1_small2.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images\product1_small3.jpg" width="100%" class="small-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col2">
+                    <p>Head Protection Equipment</p>
+                    <h1>JORESTECH Hard Hat White</h1>
+                    <h4>$26.99</h4>
+                    <select>
+                        <option>Select Size</option>
+                        <option>XXL</option>
+                        <option>XL</option>
+                        <option>Large</option>
+                        <option>Medium</option>
+                        <option>Small</option>
+                    </select>
+                    <input type="number" value="1">
+                    <a href="" class="btn">Add To Cart</a>
+                    <h3>Product Details</h3>
+                    <br>
+                    <p> Work-At-Height and Rescue Slotted Ventilated Helmet with 6-Point Ratchet Suspension ANSI
+                        Z89.1-14 Certified For Work, Home, and General Headwear Protection HHAT-04 <br>
+                        Ventilation holes open or close with adjustable sliding shutters for increased air circulation
+                        when needed <br>
+                        Low profile, sleek, modern design that allows for uninterrupted upward vision. Side inserts
+                        compatible with eye protection gear. Recommended with the JORESTECH Retractable Eye Shield. <br>
+                        Four positioning hooks for easily mounting a headlamp with an elastic headband and keeping it
+                        securely in place <br>
+                        Chin strap designed to reduce risk of losing helmet during a fall – great for working at heights
+                        or during emergency rescue <br>
+                        Six-point webbing suspension system conforms to the shape of head for improved comfort and
+                        greater impact protection</p>
+                </div>
+            </div>
+        </div>
+
+        <!----  title  ---->
         <div class="small-container">
             <div class="row row-2">
-                <h2>All Products</h2>
-                <select>
-                    <option>Default Sorting</option>
-                    <option>Sort by Price</option>
-                    <option>Sort by Popularity</option>
-                    <option>Sort by rating</option>
-                    <option>Sort by sale</option>
-                </select>
+                <h2>Related Products</h2>
+                <p>View More</p>
             </div>
+        </div>
+
+
+        <!---- products ---->
+
+        <div class="small-container">
             <div class="row">
                 <div class="col4">
                     <img src="images\product1.jpg">
@@ -97,16 +153,12 @@
                     <p>$67.99</p>
                 </div>
 
-                <div class="page-btn">
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
-                    <span>4</span>
-                    <span>&#8594;</span>
-                </div>
             </div>
         </div>
     </div>
+
+    <!-- footer -->
+
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -157,6 +209,24 @@
             else {
                 MenuItems.style.maxHeight = "0px";
             }
+        }
+    </script>
+
+    <!-- js for product gallery -->
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+        SmallImg[0].onclick = function () {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function () {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function () {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function () {
+            ProductImg.src = SmallImg[3].src;
         }
     </script>
 </body>
