@@ -327,7 +327,24 @@ small{
     .row{
         text-align: center;
     }
-    .col2,col3,col4{
+    .col2,.col3,.col4{
         flex-basis: 100%;
+    }
+
+    .single-product .row{
+        text-align: left;
+    }
+
+    .single-product .col2{
+        padding: 20px 0;
+    }
+
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .cart-info p{
+        display: none;
     }
 }
