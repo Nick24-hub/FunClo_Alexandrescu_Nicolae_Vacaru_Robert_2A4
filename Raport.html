@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ro" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Worker Safety Store</title>
+    <link rel="stylesheet" href="raport.css">
+</head>
+
+<body prefix="schema: http://schema.org">
+    <header>
+        <h1>Worker Safety Store - documentation</h1>
+    </header>
+    <div>
+        <dl>
+            <dt>Autori</dt>
+            <dd>
+                Vacaru Stefan Robert
+            </dd>
+            <dd>
+                Alexandrescu Nicolae
+            </dd>
+        </dl>
+    </div>
+
+    <section>
+        <h2><span>1. </span>Proiect</h2>
+        <h3>FunClo (Functional Clothing Organizer) [B]</h3>
+        <p>
+            Sa se realizeze o aplicatie Web care gestioneaza colectii de imbracaminte de protectie si proprietatile
+            aferente: categorie, materiale, pret, marime, imagini, destinatari in functie de meserie/activitate
+            (alpinist, apicultor, electrician, medic, pompier, scafandru, sudor etc.), context (exterior, interior,
+            mediu subacvatic, mediu toxic, temperaturi extreme, spatiu cosmic, prezente ostile,...), accesorii deosebite
+            (e.g., necesita casca, cizme ori manusi) si altele. Sistemul va furniza suport pentru activitati de
+            cumparare/licitare a acestor haine, inclusiv administrarea utilizatorilor. Se vor genera statistici diverse,
+            textuale si grafice, exportate in formate deschise – minimal, CSV si SVG, respectiv. Se va realiza, de
+            asemenea, un clasament al celor mai populare produse, disponibil si ca flux de date RSS.
+        </p>
+    </section>
+
+    <section>
+        <h2><span>2. </span>Introducere</h2>
+        <p>
+            Aplicatia noastra realizata in cadrul proiectului FunClo, presupune o pagina HTML interactiva sub forma unui
+            magazin de haine si accesorii de protectie pentru anumite meserii, activitati sportive sau recreative.
+            <br>In cadrul realizarii aplicatiei am luat in vedere mai multe aspecte precum :
+            <br>-un Home-page
+            <br>-o pagina pentru login si inregistrare
+            <br>-o pagina pentru shopul efectiv din care se poate acessa paginile produselor
+            <br>-un Shopping-cart din care se poate da checkout
+            <br>-o pagina de contact
+        </p>
+    </section>
+
+    <section">
+        <h2><span>3. </span>Diagrame</h2>
+        <p>Am creat o diagrama ce simbolizeaza procentajul de produse in functie de meserie sau activitate</p>
+        <div>
+            <a href="Diagram.html">Link catre Diagrama procentelor</a><br />
+        </div>
+        <div>
+            <div>
+                <iframe src="Diagram.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0"
+                    width="1000px" height="500px">
+                </iframe>
+            </div>
+            <br/>
+        </div>
+        </section>
+
+        <section>
+            <h2><span>4. </span>Paginile aplicatiei</h2>
+            <section>
+                <h3><span>4.1 </span>Home-Page</h3>
+                <p>
+                    Pe pagina principala am creat in header o bara de navigare cu un logo in partea stanga care
+                    redirectioneaza utilizatorul catre pagina principala
+                    iar in partea dreapta se afla cinci butoane care redirectioneaza catre celelate pagini ale
+                    magazinului.
+                    <br>
+                    Observam de asemenea o insiruire de produse in functie de mai multe criterii.Ideea din spate a fost
+                    sa oferim o oarecare usurinta utilizatorului pentru a accesa cele mai intalnite sau cumparate
+                    produse.
+                    <br>
+                    Mai jos am creat o sectiune unde apare o oferta.
+                    <br>
+                    Apoi urmeaza o sectiune despre creatorii paginii.
+                    <br>
+                    Apoi urmeaza o sectiune cu logo-uri ale unor brand-uri care vand produsele.
+                    <br>
+                    Si in final am creat un footer cu link-uri utile.
+                </p>
+            </section>
+
+
+            <section>
+                <h3><span>4.2 </span>Account</h3>
+                <p>
+                    Aici utilizatorul isi poate crea un cont sau se poate loga pentru a accesta datele despre
+                    activitatea lui pe site.
+                </p>
+            </section>
+
+            <section>
+                <h3><span>4.3 </span>Shop</h3>
+                <p>
+                    Pagina de shop este pagina din care utilizatorul poate accesa produsele individual, si eventual le
+                    poate filtra prin
+                    intermediul anumitor criterii sau le poate sorta(dupa pret,popularitate,etc.).
+                </p>
+            </section>
+
+            <section>
+                <h3><span>4.4 </span>Shopping-cart</h3>
+                <p>
+                    In Shoppinng-cart se vor aduna itemele pe care utilizatorul vrea sa le cumpere si de aici va putea
+                    da checkout-ul.
+                </p>
+            </section>
+            <section>
+                <h3><span>4.5 </span>Contact</h3>
+                <p>
+                    O pagina de contact in care utilizatorul poate sa introduca anumite date despre el pentru a
+                    adresa o intrebare echipei noastre.
+                </p>
+            </section>
+        </section>
+
+        <section>
+            <h2><span>5. </span>Detalii de implementare</h2>
+            <section>
+                <p>In momentul in care latimea ecranului scade sub 600 pixeli bara de navigatie din header dispare si am creat un buton care apare si odata apasat , folosind JavaScript,
+                    apare un meniu special pentru ecranele mici din care utilizatorul poate accesa celelate pagini.</p>
+                <p>
+                    Pe pagina "Account" am mai folosit JavaScript pentru a comuta intre cele doua formulare, cel pentru
+                    login si cel pentru register.
+                </p>
+                <p>
+                    Pentru aranjarea obiectelor in pagina sub forma de tabel am folosit flex.
+                </p>
+            </section>
+        </section>
+
+        <section>
+            <h2><span>6. </span>Bibleografie</h2>
+            <ul>
+                <li>
+                    <cite>
+                        <a href="https://developers.google.com/chart">Google Charts</a>
+                    </cite>
+                </li>
+                <li>
+                    <cite>
+                        <a href="https://www.w3schools.com/">w3schools</a>
+                    </cite>
+                </li>
+                <li>
+                    <cite>
+                        <a href="https://fonts.google.com/specimen/Roboto">Roboto font</a>
+                    </cite>
+                </li>
+                <li>
+                    <cite>
+                        <a href="https://www.w3schools.com/howto/howto_css_star_rating.asp/">Rating stars</a>
+                    </cite>
+                </li>
+            </ul>
+
+        </section>
+
+</body>
+
+</html>
