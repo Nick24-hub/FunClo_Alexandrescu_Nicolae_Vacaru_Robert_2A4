@@ -85,7 +85,7 @@ p{
 }
 
 .header{
-    background: radial-gradient(#fff,#ffd6d6);
+    background: radial-gradient(#fff,#d6d7ff);
 }
 
 .header .row{
@@ -410,7 +410,7 @@ th:last-child{
 
 .account-page{
     padding: 50px 0;
-    background: radial-gradient(#fff,#ffd6d6);
+    background: radial-gradient(#fff,#d6d7ff);
 
 }
 
