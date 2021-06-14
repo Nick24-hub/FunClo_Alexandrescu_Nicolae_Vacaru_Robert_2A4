@@ -51,18 +51,19 @@
                         </div>
 
                         <form id="LoginForm">
-                            <input type="text" placeholder="Username">
-                            <input type="password" placeholder="Password">
-                            <button type="submit" class="btn">Login</button>
+                            <input type="text" name = "uid" placeholder="Username">
+                            <input type="password" name ="pwd" placeholder="Password">
+                            <button type="submit" name="login-submit" class="btn">Login</button>
                             <a href="">Forgot password</a>
                         </form>
 
-                        <form id="RegForm">
-                            <input type="text" placeholder="Username">
-                            <input type="email" placeholder="Email">
-                            <input type="password" placeholder="Password">
-                            <input type="password" placeholder="Confirm Password">
-                            <button type="submit" class="btn">Register</button>
+                        <form id="RegForm" action="includes/signup.inc.php" method="post">
+                            <input type="text" name="username" placeholder="Full name">
+                            <input type="text" name="uid" placeholder="Username">
+                            <input type="email" name="email" placeholder="Email">
+                            <input type="password" name="pwd" placeholder="Password">
+                            <input type="password" name="pwd-repeat" placeholder="Confirm Password">
+                            <button type="submit" name="register-submit" class="btn">Register</button>
                         </form>
                     </div>
                 </div>
