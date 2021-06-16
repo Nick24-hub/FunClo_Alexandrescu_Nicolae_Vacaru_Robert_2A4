@@ -50,7 +50,7 @@
     padding:15px;
     width:50%;
 }
-.contact-items a{
+.contact-items button{
     background: #ff523b;
     color:white;
     display:block;
@@ -93,7 +93,7 @@ nav ul li{
 
 }
 
-a{
+.btn{
     text-decoration: none;
     color: #555;
 }
