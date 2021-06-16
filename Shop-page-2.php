@@ -1,9 +1,12 @@
-<?php include 'structure/header-shop.php';?>
-<link rel="stylesheet" href="shop.css">
 <html>
-<body> 
+
+<?php include 'structure/head.php'; ?>
+
+<body>
+    <?php include 'structure/header.php'; ?>
+
     <div class="small-container all-products">
-        <div class="row row-2">
+        <div class="row row-2">ł
             <h2>All Products</h2>
             <select>
                 <option>All Categories</option>
@@ -21,7 +24,7 @@
         </div>
         <div class="row">
             <div class="col4">
-                <a href="product-details-5.html">
+                <a href="product-details-5.php">
                     <img src="images\product5.jpg"></a>
                 <h4>Ergodyne Arsenal 5005P Large Polyester Firefighter Rescue Turnout Fire Gear Bag with Shoulder Strap
                     and Helmet Pocket
@@ -36,7 +39,7 @@
                 <p>$38.37</p>
             </div>
             <div class="col4">
-                <a href="product-details-6.html">
+                <a href="product-details-6.php">
                     <img src="images\product6.jpg"></a>
                 <h4>LINE2design Firefighter Glove Strap - Emergency Rescue Turnout Gear Heavy Duty Reflective Gloves
                     Safety Leash - First Responders EMTs Construction and Mechanics Adjustable Work Glove Holder - Green
@@ -51,7 +54,7 @@
                 <p>$8.49</p>
             </div>
             <div class="col4">
-                <a href="product-details-7.html">
+                <a href="product-details-7.php">
                     <img src="images\product7.jpg"></a>
                 <h4>Ur Shield FR Shirt - Fire Resistant Shirt - Work Shirt - Welding Shirt XL, Navy Blue Fire Retardant
                     Shirt - FR Clothing for Welders & Electricians
@@ -66,7 +69,7 @@
                 <p>$39.99</p>
             </div>
             <div class="col4">
-                <a href="product-details-8.html">
+                <a href="product-details-8.php">
                     <img src="images\product8.jpg"></a>
                 <h4>McGuire-Nicholas 526-CC Brown Professional Electrician'S Pouch, oil tanned leather
                 </h4>
@@ -82,24 +85,25 @@
 
             <div class="page-btn">
                 <a href="Shop.php"><span>1</span></a>
-               <a href="Shop-page-2.php"><span>2</span></a> 
-               <a href="Shop-page-3.php"><span>3</span></a>
-               <a href="Shop-page-3.php"><span>&#8594;</span></a> 
+                <a href="Shop-page-2.php"><span>2</span></a>
+                <a href="Shop-page-3.php"><span>3</span></a>
+                <a href="Shop-page-3.php"><span>&#8594;</span></a>
             </div>
         </div>
     </div>
-    <?php include 'structure/footer.php';?>
 
+
+    <?php include 'structure/footer.php'; ?>
 
     <!-- js for toggle menu -->
     <script>
         var MenuItems = document.getElementById("MenuItems");
         MenuItems.style.maxHeight = "0px";
+
         function menutoggle() {
             if (MenuItems.style.maxHeight == "0px") {
                 MenuItems.style.maxHeight = "200px";
-            }
-            else {
+            } else {
                 MenuItems.style.maxHeight = "0px";
             }
         }

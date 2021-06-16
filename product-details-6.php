@@ -1,61 +1,33 @@
 <html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
-    <title>Worker Safety Store</title>
-    <link rel="stylesheet" href="Shop.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+<?php include 'structure/head.php'; ?>
 
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="images\logo.png" width="150px" height="150px">
-                    </a>
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Shop.html">Shop</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="account.html">Account</a></li>
-                    </ul>
-                </nav>
-                <a href="cart.html">
-                    <img src="images\shopping-cart.png" width="30px" height="30px">
-                    <span>0</span>
-                </a>
-                <img src="images\menu-icon.png" class="menu-icon" onclick="menutoggle()">
-            </div>
-        </div>
-    </div>
+    <?php include 'structure/header.php'; ?>
 
     <!-- single product details -->
 
     <div class="small-container single-product">
         <div class="row">
             <div class="col2">
-                <img src="images\product5.jpg" width="100%" id="ProductImg">
+                <img src="images\product6.jpg" width="100%" id="ProductImg">
 
                 <div class="small-img-row">
                     <div class="small-img-col">
-                        <img src="images\product5.jpg" width="100%" class="small-img">
+                        <img src="images\product6.jpg" width="100%" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <img src="images\product5_small1.jpg" width="100%" class="small-img">
+                        <img src="images\product6_small1.jpg" width="100%" class="small-img">
                     </div>
-                    
+                    <div class="small-img-col">
+                        <img src="images\product6_small2.jpg" width="100%" class="small-img">
+                    </div>
                 </div>
             </div>
             <div class="col2">
-                <p>Firefighter Rescue Turnout Fire Gear Bag</p>
-                <h1>Ergodyne Arsenal 5005P</h1>
-                <h4>$38.37</h4>
+                <p>Emergency Rescue Turnout Gear Heavy Duty Reflective Gloves Safety Leash</p>
+                <h1>LINE2design Firefighter Glove Strap</h1>
+                <h4>$8.49</h4>
                 <select>
                     <option>Select Size</option>
                     <option>One Size</option>
@@ -64,18 +36,16 @@
                 <a href="" class="btn">Add To Cart</a>
                 <h3>Product Details</h3>
                 <br>
-                <p>EXTREME DURABILITY Made with 1000D polyester to keep turnout gear, helmet, and other gear clean and
-                    dry.
+                <p>Heavy Duty Durable Webbing Strap Firefighter Turnout Gear Glove strap has extra-long length 12 ½”
+                    on each side.
                     <br>
-                    PLENTY OF STORAGE Main interior pocket has more than enough room to store all of your gear 21in x
-                    15in x 15in (53cm x 38cm x 38cm). Large end pockets can hold a fire helmet, SCBA resipirator or
-                    other fire gear.
+                    Bright and Reflective Strong, heavy-duty 1” Fluorescent Lime Trim Reflective nylon webbing. Built
+                    to last, this will be the only glove holder you'll ever need.
                     <br>
-                    OPTIMAL COMFORT Adjustable and removable padded shoulder strap makes it easy to carry and transport
-                    your bag.
+                    Quick-Release Buckle The fully adjustable, quick-release buckle and highest quality Snap Swivel
+                    Hook & loop available. Industrial strength all metal, black, swivel snap hook.
                     <br>
-                    ONVENIENT Two haul handles on the ends of the duffel make it easy to grab when removing from a fire
-                    apparatus, truck, ambulance, or other emergency vehicle.
+                    Ideal Design LINE2design work glove strap is ideal & designed for firefighters, EMTs, construction workers, and mechanics.
                 </p>
             </div>
         </div>
@@ -85,7 +55,7 @@
     <div class="small-container">
         <div class="row row-2">
             <h2>Related Products</h2>
-            <a href="Shop.html">
+            <a href="Shop.php">
                 <p>View More</p>
             </a>
         </div>
@@ -97,7 +67,7 @@
     <div class="small-container">
         <div class="row">
             <div class="col4">
-                <a href="product-details-1.html">
+                <a href="product-details-1.php">
                     <img src="images\product1.jpg"></a>
                 <h4>JORESTECH Hard Hat White ABS Work-At-Height and Rescue Slotted Ventilated Helmet with 6-Point
                     Ratchet Suspension ANSI Z89.1-14 Certified For Work, Home, and General Headwear Protection
@@ -113,7 +83,7 @@
                 <p>$26.99</p>
             </div>
             <div class="col4">
-                <a href="product-details-2.html">
+                <a href="product-details-2.php">
                     <img src="images\product2.jpg"></a>
                 <h4>Humble Bee 210 Polycotton Beekeeping Veil with Round Hat</h4>
                 <div class="rating">
@@ -126,8 +96,8 @@
                 <p>$39.95</p>
             </div>
             <div class="col4">
-                <a href="product-details-3.html">
-                <img src="images\product3.jpg"></a>
+                <a href="product-details-3.php">
+                    <img src="images\product3.jpg"></a>
                 <h4>TSLA Men's Winter Ski Jacket, Waterproof Warm Insulated Snow Coats, Cold Weather Windproof
                     Snowboard
                     Jacket with Hood</h4>
@@ -141,8 +111,8 @@
                 <p>$79.98</p>
             </div>
             <div class="col4">
-                <a href="product-details-4.html">
-                <img src="images\product4.jpg"></a>
+                <a href="product-details-4.php">
+                    <img src="images\product4.jpg"></a>
                 <h4>COPOZZ Wetsuit for Men and Women 3mm Neoprene Full Wetsuit, Back Zip Long Sleeve One Piece
                     Wetsuit
                     Jumpsuit for Scuba Diving Surfing Snorkeling</h4>
@@ -161,54 +131,17 @@
 
     <!-- footer -->
 
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and ios mobile phone.</p>
-                    <div class="app-logo">
-                        <img src="images\app-logo1.png">
-                        <img src="images\app-logo2.png">
-                    </div>
-                </div>
-                <div class="footer-col2">
-                    <img src="images\logo.png">
-                    <p>Our Purpose Is To Sustainably Make You Feel Safe While Doing Your Activities.</p>
-                </div>
-                <div class="footer-col3">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li>Coupons</li>
-                        <li>Blog Post</li>
-                        <li>Return Policy</li>
-                        <li>Join Affiliate</li>
-                    </ul>
-                </div>
-                <div class="footer-col4">
-                    <h3>Follow us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>YouTube</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <p class="copyright">Copyright 2021 Worker Safety Store</p>
-        </div>
-    </div>
+    <?php include 'structure/footer.php'; ?>
 
     <!-- js for toggle menu -->
     <script>
         var MenuItems = document.getElementById("MenuItems");
         MenuItems.style.maxHeight = "0px";
+
         function menutoggle() {
             if (MenuItems.style.maxHeight == "0px") {
                 MenuItems.style.maxHeight = "200px";
-            }
-            else {
+            } else {
                 MenuItems.style.maxHeight = "0px";
             }
         }
@@ -218,20 +151,21 @@
     <script>
         var ProductImg = document.getElementById("ProductImg");
         var SmallImg = document.getElementsByClassName("small-img");
-        SmallImg[0].onclick = function () {
+        SmallImg[0].onclick = function() {
             ProductImg.src = SmallImg[0].src;
         }
-        SmallImg[1].onclick = function () {
+        SmallImg[1].onclick = function() {
             ProductImg.src = SmallImg[1].src;
         }
-        SmallImg[2].onclick = function () {
+        SmallImg[2].onclick = function() {
             ProductImg.src = SmallImg[2].src;
         }
-        SmallImg[3].onclick = function () {
+        SmallImg[3].onclick = function() {
             ProductImg.src = SmallImg[3].src;
         }
     </script>
 
     <script src="main.js"></script>
 </body>
+
 </html>
