@@ -38,6 +38,7 @@ session_start();
                 </nav>
                 <a href="cart.php">
                     <img src="images\shopping-cart.png" width="30px" height="30px">
+                    <span>0</span>
                 </a>
                 <img src="images\menu-icon.png" class="menu-icon" onclick="menutoggle()">
             </div>
