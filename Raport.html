@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ro" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Worker Safety Store</title>
+</head>
+
+<body prefix="schema: http://schema.org">
+    <header>
+        <h1>Worker Safety Store - documentation</h1>
+    </header>
+    <div>
+        <dl>
+            <dt>Autori</dt>
+            <dd>
+                Vacaru Stefan Robert
+            </dd>
+            <dd>
+                Alexandrescu Nicolae
+            </dd>
+        </dl>
+    </div>
+
+    <section>
+        <h2><span>1. </span>Proiect</h2>
+        <h3>FunClo (Functional Clothing Organizer) [B]</h3>
+        <p>
+            Sa se realizeze o aplicatie Web care gestioneaza colectii de imbracaminte de protectie si proprietatile
+            aferente: categorie, materiale, pret, marime, imagini, destinatari in functie de meserie/activitate
+            (alpinist, apicultor, electrician, medic, pompier, scafandru, sudor etc.), context (exterior, interior,
+            mediu subacvatic, mediu toxic, temperaturi extreme, spatiu cosmic, prezente ostile,...), accesorii deosebite
+            (e.g., necesita casca, cizme ori manusi) si altele. Sistemul va furniza suport pentru activitati de
+            cumparare/licitare a acestor haine, inclusiv administrarea utilizatorilor. Se vor genera statistici diverse,
+            textuale si grafice, exportate in formate deschise – minimal, CSV si SVG, respectiv. Se va realiza, de
+            asemenea, un clasament al celor mai populare produse, disponibil si ca flux de date RSS.
+        </p>
+    </section>
+
+    <section>
+        <h2><span>2. </span>Introducere</h2>
+        <p>
+            Aplicatia noastra realizata in cadrul proiectului FunClo, presupune o pagina HTML interactiva sub forma unui
+            magazin de haine si accesorii de protectie pentru anumite meserii, activitati sportive sau recreative.
+            <br>In cadrul realizarii aplicatiei am luat in vedere mai multe aspecte precum :
+            <br>-un Home-page
+            <br>-o pagina pentru login si inregistrare
+            <br>-o pagina pentru shopul efectiv din care se poate acessa paginile produselor
+            <br>-un Shopping-cart din care se poate da checkout
+            <br>-o pagina de contact
+        </p>
+    </section>
+
+    <section">
+        <h2><span>3. </span>Arhitectura</h2>
+        <p>Am creat o diagrama ce simbolizeaza procentajul de produse in functie de meserie sau activitate</p>
+        <div>
+            <a href="Diagram.html" >Link catre Diagrama procentelor</a><br />
+        </div>
+        <div>
+            <div>
+                <iframe src="Diagram.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0"
+                    width="1000px" height="500px">
+                </iframe>
+            </div>
+            <br />
+
+        </div>
+
+        </section>
+        <section>
+            <h2><span>4. </span>Paginile aplicatiei</h2>
+            <section>
+                <h3><span>4.1 </span>Home-Page</h3>
+                <p>
+                    Pe pagina principala am creat in header o bara de navigare cu un logo in partea stanga care
+                    redirectioneaza utilizatorul catre pagina principala
+                    iar in partea dreapta se afla cinci butoane care redirectioneaza catre celelate pagini ale
+                    magazinului.
+                    <br>
+                    Observam de asemenea o insiruire de produse in functie de mai multe criterii.Ideea din spate a fost
+                    sa oferim o oarecare usurinta utilizatorului pentru a accesa cele mai intalnite sau cumparate
+                    produse.
+                    <br>
+                    Mai jos am creat o sectiune unde apare o oferta.
+                    <br>
+                    Apoi urmeaza o sectiune despre creatorii paginii.
+                    <br>
+
+                </p>
+            </section>
+
+
+            <section>
+                <h3><span>4.2 </span>Account</h3>
+                <p>
+                    Aceasta pagina presupune locatia in care utilizatorul se poate loga sau inregistra pentru a accesa
+                    un anumit cont.
+                </p>
+            </section>
+
+            <section>
+                <h3><span>4.3 </span>Shop</h3>
+                <p>
+                    Pagina de shop este pagina din care poti accesa produsele individual, le poti filtra prin
+                    intermediul anumitor criterii,le poti sorta(dupa pret,popularitate,etc.).
+
+                </p>
+            </section>
+            <section>
+                <h3><span>4.4 </span>Shopping-cart</h3>
+                <p>
+                    In Shoppinng-cart se vor aduna itemele pe care utilizatorul vrea sa le cumpere si de aici va putea
+                    da checkout-ul.
+                </p>
+            </section>
+            <section>
+                <h3><span>4.5 </span>Contact</h3>
+                <p>
+                    O pagina de contact in care utilizatorul este nevoit sa introduca anumite date despre el pentru a
+                    adresa o intrebare echipei noastre.
+                </p>
+            </section>
+        </section>
+        <!--  pentru fiecare pagina -->
+        <section>
+            <h2><span>5. </span>Detalii de implementare</h2>
+            <section>
+                <h3><span>5.1 </span></h3>
+                <p>
+
+                </p>
+                <h3><span>5.2 </span>Filtrul</h3>
+                <p>
+                </p>
+                <h3><span>5.3</span>Slide Show-ul</h3>
+                <p>
+
+                </p>
+            </section>
+            <!--trebuie sa trecem si butoanele -->
+        </section>
+
+        <section>
+            <h2><span>6. </span>Bibleografie</h2>
+            <ul>
+                <li>
+                    <cite>
+                        <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+                    </cite>
+                </li>
+                <li>
+                    <cite>
+                        <a href="https://www.w3schools.com/">w3schools</a>
+                    </cite>
+                </li>
+            </ul>
+
+        </section>
+
+</body>
+
+</html>
