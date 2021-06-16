@@ -1,8 +1,10 @@
-<?php include 'structure/header-shop.php';?>
-<link rel="stylesheet" href="shop.css">
 <html>
+
+<?php include 'structure/head.php'; ?>
+
 <body>
-    
+    <?php include 'structure/header.php'; ?>
+
     <div class="small-container all-products">
         <div class="row row-2">
             <h2>All Products</h2>
@@ -22,7 +24,7 @@
         </div>
         <div class="row">
             <div class="col4">
-                <a href="product-details-9.html">
+                <a href="product-details-9.php">
                     <img src="images\product9.jpg"></a>
                 <h4>Firefighter Training Regulator | Breathing Resistance XRT Pro 2.0 Trainer for Scott AV-2000 &
                     AV-3000 SCBA Mask
@@ -37,7 +39,7 @@
                 <p>$59.99</p>
             </div>
             <div class="col4">
-                <a href="product-details-10.html">
+                <a href="product-details-10.php">
                     <img src="images\product10.jpg"></a>
                 <h4>Stethoscope Holder pro with Clip,Handmade in USA Genuine Leather .Perfect for Physicians, Nurses,
                     EMT, Medical Nursing Student. No More Neck Carrying, Work with Comfort
@@ -52,7 +54,7 @@
                 <p>$12.99</p>
             </div>
             <div class="col4">
-                <a href="product-details-11.html">
+                <a href="product-details-11.php">
                     <img src="images\product11.jpg"></a>
                 <h4>COPOZZ Scuba Mask, No Fogging Snorkeling Scuba Dive Glasses, Great Seal Free Diving Tempered Glass Mask Goggles
                 </h4>
@@ -66,7 +68,7 @@
                 <p>$20.99</p>
             </div>
             <div class="col4">
-                <a href="product-details-12.html">
+                <a href="product-details-12.php">
                     <img src="images\product12.jpg"></a>
                 <h4>Humble Bee 410 Polycotton Beekeeping Suit with Round Veil
                 </h4>
@@ -88,22 +90,24 @@
             </div>
         </div>
     </div>
-    <?php include 'structure/footer.php';?>
+
+    <?php include 'structure/footer.php'; ?>
 
     <!-- js for toggle menu -->
     <script>
         var MenuItems = document.getElementById("MenuItems");
         MenuItems.style.maxHeight = "0px";
+
         function menutoggle() {
             if (MenuItems.style.maxHeight == "0px") {
                 MenuItems.style.maxHeight = "200px";
-            }
-            else {
+            } else {
                 MenuItems.style.maxHeight = "0px";
             }
         }
     </script>
-    
+
     <script src="main.js"></script>
 </body>
+
 </html>
