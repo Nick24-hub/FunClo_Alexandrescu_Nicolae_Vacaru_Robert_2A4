@@ -1,0 +1,78 @@
+CREATE TABLE users (
+  userId int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  userName varchar(128) NOT null,
+  userEmail varchar(128) NOT null,
+  userUid varchar(128) Not Null,
+  userPwd varchar(128) NOT null
+);
+
+
+CREATE TABLE product (
+    id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+    title varchar(255) not null,
+    details varchar(1500) not null,
+    price float(8,2) not null
+);
+
+INSERT INTO product (title, details, price) VALUES ('JORESTECH Hard Hat White', 'Work-At-Height and Rescue Slotted Ventilated Helmet with 6-Point Ratchet Suspension ANSI Z89.1-14 Certified For Work, Home, and General Headwear Protection HHAT-04
+Ventilation holes open or close with adjustable sliding shutters for increased air circulation when needed
+Low profile, sleek, modern design that allows for uninterrupted upward vision. Side inserts compatible with eye protection gear. Recommended with the JORESTECH Retractable Eye Shield.
+Four positioning hooks for easily mounting a headlamp with an elastic headband and keeping it securely in place
+Chin strap designed to reduce risk of losing helmet during a fall – great for working at heights or during emergency rescue
+Six-point webbing suspension system conforms to the shape of head for improved comfort and greater impact protection', 26.99);
+
+INSERT INTO product (title, details, price) VALUES ('Humble Bee', 'Polycotton beekeeper veil with round hat, reinforced brims, and elastic shoulder straps.
+Medium-weight 50% cotton / 50% synthetic blend (260 gsm) provides outstanding protection against bee stings, plus all-day comfort in most weather conditions.
+Universal fit with an oversized mesh to protect your neck and shoulders, plus elastic shoulder straps to keep everything comfortably in place.
+Unisex design for men and women.
+Humble Bee donates 10% of earnings to not-for-profit organizations that encourage local beekeeping activities and promote bee conservation efforts.', 39.95);
+
+INSERT INTO product (title, details, price) VALUES ('TSLA Men\'s', '3-Layer Construction : Anti-Static Fabric, Insulation Padding, and Duratex Ripstop.
+Multi Pockets : Various Pocket Configuration and Functionality.
+Functional Hoodie : Multifaceted Hoodie with Face Cover and adjustable Pullcord.
+Unisex design for men and women.
+Elastic Cuffs & Thumb holes to help keep sleeves in place inorder to prevent ride-ups.', 79.98 );
+
+INSERT INTO product (title, details, price) VALUES ('COPOZZ Wetsuit for Men', 'Highly Quality Neoprene Wetsuit--- Made of premium 3mm neoprene and nylon fabric, stretchable and heat insulation, soft and comfortable.
+Full Body Protection Wetsuit--- The neoprene thermal wetsuit can keep you warm, buoyancy provided will make you float more easily, and help you master swimming and diving skill faster. What’s more, the men women wetsuits sheild you from UV rays and protect you against coral reef abrasion, jellyfish stings and sea lice, jellies and other marine biological irritants.
+Features for Full Wetsuit--- One-piece contemporary style and flattering fit. This long sleeve wetsuit design with back zipper along with long pull cord for easy on and off, and inner panel layer under the zipper ensures it won\'t catch or irritate your delicate skin; the reinforced knees prevent from friction and hurt.
+Multi Water Sports Wetsuit--- COPOZZ full body diving suit is designed for all water sports, such as scuba diving, surfing, snorkeling, swimming, kayaking, canoeing, wakeboarding, stand-up paddle boarding and so on, perfect for adult men women diving beginners and amateurs.', 67.99);
+
+INSERT INTO product (title, details, price) VALUES ('Ergodyne Arsenal 5005P', 'EXTREME DURABILITY Made with 1000D polyester to keep turnout gear, helmet, and other gear clean and dry.
+PLENTY OF STORAGE Main interior pocket has more than enough room to store all of your gear 21in x 15in x 15in (53cm x 38cm x 38cm). Large end pockets can hold a fire helmet, SCBA resipirator or other fire gear.
+OPTIMAL COMFORT Adjustable and removable padded shoulder strap makes it easy to carry and transport your bag.
+ONVENIENT Two haul handles on the ends of the duffel make it easy to grab when removing from a fire apparatus, truck, ambulance, or other emergency vehicle.', 38.37);
+
+INSERT INTO product (title, details, price) VALUES ('LINE2design Firefighter Glove Strap', 'Heavy Duty Durable Webbing Strap Firefighter Turnout Gear Glove strap has extra-long length 12 ½” on each side.
+Bright and Reflective Strong, heavy-duty 1” Fluorescent Lime Trim Reflective nylon webbing. Built to last, this will be the only glove holder you\'ll ever need.
+Quick-Release Buckle The fully adjustable, quick-release buckle and highest quality Snap Swivel Hook & loop available. Industrial strength all metal, black, swivel snap hook.
+Ideal Design LINE2design work glove strap is ideal & designed for firefighters, EMTs, construction workers, and mechanics.', 8.49);
+
+INSERT INTO product (title, details, price) VALUES ('Navy Blue Fire Retardant Shirt - FR Clothing for Welders & Electricians', 'CLEARLY MARKED AS FR – clear FR marking on front pocket. The Fabric Is Treated To Make It Fire Retardant
+STYLISH & FUNCTIONAL – This trendy FR work shirt provides a perfect and comfortable fit. Made from 8.1 oz. fire retardant cotton, it is not only flame resistant but also soft and fashionable. A long shirt tail to ensure that shirt stay tucked
+UP TO 50 WASHES – Our utility shirt has the appropriate level of protective gear and stays enforced up to numerous washes. You can wear and wash it over and over again for up to 50 times.
+COOL, COMFY, AND FITS LIKE A CHARM – Cotton keeps you cool and comfortable while you’re hard at work because it’s a super-soft and breathable material. Your FR shirt’s fitted design lets you express your style while maximizing', 39.99);
+
+INSERT INTO product (title, details, price) VALUES ('McGuire-Nicholas 526-CC', 'McGuire-Nicholas | Helping build America since 1932.
+McGuire-Nicholas 12 Pkt. Electrician\'s Pouch, Oil Tanned Leather | Features "T" chain tape clip.
+Includes unique holders for: hammer, electrician\'s tape, tape measure, flashlight, and keys | Professional electrician\'s pouch with easy vertical tool access.
+Rivet reinforced for durability | Constructed of premium oiled leather rated for all weather use.', 27.65);
+
+INSERT INTO product (title, details, price) VALUES ('XRT Pro', 'REDUCE INJURY RISK: Up to 50% rapid response on-scene deaths and injuries are from inadequate functional fitness capacity.
+FAST SWAP CHANGEOUT: The new & improved XRT Pro ventilator mask adaptor features ball-bearing gap sealing for quick changes and air tight seal.
+6 RESISTANCE SETTINGS: Increase or decrease the breathing load depending on your individual fitness levels ... It\'s as easy as turn-click-turn.
+AIR TANK SAVINGS: No need to crack the seal. XRT Pro 2.0 easily simulates low tank scenarios - No tank required.', 59.99);
+
+INSERT INTO product (title, details, price) VALUES ('Littmann', 'The STETHOSCOPE HOLDER PRO is an elegant handmade holder that secures your stethoscope for quick access and trouble-free carrying.Two leather wings lined with hook-and-loop material (the same industrial grade “Velcro” used in blood pressure cuffs) hold your scope securely alongside your help. A metal clip firmly attaches the stethoscope holder pro to your belt, pants, or scrubs.
+Genuine leather universal stethoscope holder with strong metal clip. Premium quality, superior grip, and strength.
+Our STETHOSCOPE HOLDER PRO fits most types of adult and pediatric stethoscopes, including the single-head Cardiology and electronic or amplified stethoscopes', 12.99);
+
+INSERT INTO product (title, details, price) VALUES ('COPOZZ', 'Fashion Integrated frame snorkel mask with double lens offers a 180 degree superior view for underwater exploration. Wide and high-grade soft silicone 3d sealing face gasket which molds perfectly to fit any face shape. Diving in style.
+Scuba mask with shatter-resistant glass lenses to withstand deep water pressure. Scratching resist lens instead of polycarbonate enables you a clearer view under water and hardly to leave any scratches to your lens.
+Diving mask seals great with wide field of view. The silicone would be comfortably soft and seals on your face very well, which is the most important thing for preventing leaks.The frame looks cool.
+The goggles strap attaches to the skirt instead of the frame as this allows for a variety of face shapes and the mask should seal very well with many of them. Wider nicely shaped skirt help to seal and prevent leaking. Perfect for both diving pros and beginners.', 20.99);
+
+INSERT INTO product (title, details, price) VALUES ('Humble Bee 410', 'Polycotton beekeeper suit with self-supporting round veil, heavy duty brass zippers, durable double-stitched pockets, and deluxe canvas carrying case.
+Medium-weight 50% cotton / 50% synthetic blend (280 gsm) provides outstanding protection against bee stings, plus all-day comfort in most weather conditions.
+Tailored fit with an elastic waist, elastic wrists, and elastic ankles, plus thumb and foot holds to keep everything comfortably in place.
+Unisex design for men and women between 5\'11" - 6\'1" (180 - 185 cm), with removable veil for easy cleaning and storage.', 139.95);

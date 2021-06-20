@@ -10,17 +10,20 @@
     <div class="small-container single-product">
         <div class="row">
             <div class="col2">
-                <img src="images\product6.jpg" width="100%" id="ProductImg">
+                <img src="images\product8.jpg" width="100%" id="ProductImg">
 
                 <div class="small-img-row">
                     <div class="small-img-col">
-                        <img src="images\product6.jpg" width="100%" class="small-img">
+                        <img src="images\product8.jpg" width="100%" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <img src="images\product6_small1.jpg" width="100%" class="small-img">
+                        <img src="images\product8_small1.jpg" width="100%" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <img src="images\product6_small2.jpg" width="100%" class="small-img">
+                        <img src="images\product8_small2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images\product8_small3.jpg" width="100%" class="small-img">
                     </div>
                 </div>
             </div>

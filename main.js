@@ -1,10 +1,11 @@
+
 let carts = document.querySelectorAll('.btn');
 
 let products = [
     {
         name: 'GRey',
         tag: 'grtsh',
-        price: 15.50,
+        price: 15.5,
         inCart: 0
     },
 
@@ -79,7 +80,7 @@ function totalCost(product) {
 
     if (cartCost != null) {
         cartCost = parseFloat(cartCost);
-        localStorage.setItem("totalCost", cartCost + product.price);
+        localStorage.setItem("totalCost",  cartCost + product.price);
     } else {
         localStorage.setItem("totalCost", product.price);
     }
@@ -133,7 +134,7 @@ function displayCart() {
             </tr>
             <tr>
                 <td>Total</td>
-                <td>$${parseInt(cartCost) + transp}</td>
+                <td>$${parseFloat(cartCost) + transp}</td>
             </tr>
         </table>
     </div>
