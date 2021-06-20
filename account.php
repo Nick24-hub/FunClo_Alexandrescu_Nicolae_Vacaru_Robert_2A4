@@ -16,42 +16,26 @@
                 <div class="col2">
                     <div class="form-container">
                         <div class="form-btn">
-                            <span onclick="login()">Login</span>
+                            <span onclick="login()">Log in</span>
                             <span onclick="register()">Register</span>
                             <hr id="Indicator">
                         </div>
-                        <?php
-                        if (isset($_GET["error"])) {
-                            if ($_GET["error"] = "emptyinput")
-                                echo "<p>Fill in all fields!</p>";
-                            else if ($_GET["error"] = "wrongLogin")
-                                echo "<p>Incorrect Login credentials!</p>";
-                        }
-                        ?>
+
                         <form id="LoginForm" action="includes/login.inc.php" method="POST">
                             <input type="text" name="uid" placeholder="Username\Email">
                             <input type="password" name="pwd" placeholder="Password">
                             <button type="submit" name="login-submit" class="btn">Login</button>
-                            <a href="">Forgot password</a>
+                            <?php
+                            if (isset($_GET["newpwd"])) {
+                                if ($_GET["newpwd"] == "passwordupdated") { {
+                                        echo '<a>Your password has been reset!</a>';
+                                    }
+                                }
+                            }
+                            ?>
+                            <a href="reset-password.php">Forgot password?</a>
                         </form>
-                        <?php
-                        if (isset($_GET["error"])) {
-                            if ($_GET["error"] = "emptyinput")
-                                echo "<p>Fill in all fields!</p>";
-                            else if ($_GET["error"] = "invalidUid")
-                                echo "<p>You entered an invalid Uid!</p>";
-                            else if ($_GET["error"] = "invalidEmail")
-                                echo "<p>You entered an invalid Email!</p>";
-                            else if ($_GET["error"] = "invalidMatchPwd")
-                                echo "<p>You passwords don't match!</p>";
-                            else if ($_GET["error"] = "usernameTaken")
-                                echo "<p>You entered an username that is already in use!</p>";
-                            else if ($_GET["error"] = "stmtFailed")
-                                echo "<p>Something went wrong!</p>";
-                            else if ($_GET["error"] = "none")
-                                echo "<p>You signed up!</p>";
-                        }
-                        ?>
+
                         <form id="RegForm" action="includes/signup.inc.php" method="post">
                             <input type="text" name="username" placeholder="Full name">
                             <input type="text" name="uid" placeholder="Username">
@@ -59,6 +43,27 @@
                             <input type="password" name="pwd" placeholder="Password">
                             <input type="password" name="pwd-repeat" placeholder="Confirm Password">
                             <button type="submit" name="register-submit" class="btn">Register</button>
+                            <?php
+                            if (isset($_GET["error"])) {
+                                if ($_GET["error"] = "emptyinput") {
+                                    echo "<a>Fill in all fields!</a>";
+                                } else if ($_GET["error"] = "wrongLogin") {
+                                    echo "<a>Incorrect Login credentials!</a>";
+                                } 
+                                else if ($_GET["error"] = "invalidUid")
+                                    echo "<p>You entered an invalid Uid!</p>";
+                                else if ($_GET["error"] = "invalidEmail")
+                                    echo "<p>You entered an invalid Email!</p>";
+                                else if ($_GET["error"] = "invalidMatchPwd")
+                                    echo "<p>You passwords don't match!</p>";
+                                else if ($_GET["error"] = "usernameTaken")
+                                    echo "<p>You entered an username that is already in use!</p>";
+                                else if ($_GET["error"] = "stmtFailed")
+                                    echo "<p>Something went wrong!</p>";
+                                else if ($_GET["error"] = "none")
+                                    echo "<p>You signed up!</p>";
+                            }
+                            ?>
                         </form>
 
                     </div>
