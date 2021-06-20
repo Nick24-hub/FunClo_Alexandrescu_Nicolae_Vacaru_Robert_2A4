@@ -43,8 +43,8 @@
                     <option>Medium</option>
                     <option>Small</option>
                 </select>
-                <input type="number" value="1">
-                <a href="" class="btn">Add To Cart</a>
+                <input id="amount" type="number" value="1">
+                <a class="btn" onclick="multipleAddToCart(0)">Add To Cart</a>
                 <h3>Product Details</h3>
                 <br>
                 <p> Work-At-Height and Rescue Slotted Ventilated Helmet with 6-Point Ratchet Suspension ANSI

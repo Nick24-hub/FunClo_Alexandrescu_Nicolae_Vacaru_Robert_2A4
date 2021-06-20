@@ -6,13 +6,15 @@
     <?php include 'structure/header.php'; ?>
     <!---- cart items details ---->
     <div class="small-container cart-page">
+
         <table class="x">
             <tr>
                 <th>Product</th>
                 <th>Quantity</th>
                 <th>Subtotal</th>
             </tr>
-            <tr>
+            
+            <!-- <tr>
                 <td>
                     <div class="cart-info">
                         <a href="product-details-1.php">
@@ -28,7 +30,7 @@
                 </td>
                 <td><input type="number" value="1"></td>
                 <td>$26.99</td>
-            </tr>
+            </tr> -->
 
         </table>
 
@@ -36,7 +38,7 @@
 
         </div>
         <div class="buy">
-            <a href="">Buy</a>
+            <!-- <a href="">Buy</a> -->
         </div>
     </div>
 
@@ -58,7 +60,7 @@
         }
     </script>
 
-<script src="main.js"></script>
+    <script src="main.js"></script>
 
 </body>
 

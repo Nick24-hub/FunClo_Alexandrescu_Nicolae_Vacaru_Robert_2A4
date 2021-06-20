@@ -37,8 +37,8 @@
                     <option>Medium</option>
                     <option>Small</option>
                 </select>
-                <input type="number" value="1">
-                <a href="" class="btn">Add To Cart</a>
+                <input id="amount" type="number" value="1">
+                <a class="btn" onclick="multipleAddToCart(2)">Add To Cart</a>
                 <h3>Product Details</h3>
                 <br>
                 <p>3-Layer Construction : Anti-Static Fabric, Insulation Padding, and Duratex Ripstop.

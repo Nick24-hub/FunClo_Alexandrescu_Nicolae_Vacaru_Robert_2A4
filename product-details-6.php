@@ -32,8 +32,8 @@
                     <option>Select Size</option>
                     <option>One Size</option>
                 </select>
-                <input type="number" value="1">
-                <a href="" class="btn">Add To Cart</a>
+                <input id="amount" type="number" value="1">
+                <a class="btn" onclick="multipleAddToCart(5)">Add To Cart</a>
                 <h3>Product Details</h3>
                 <br>
                 <p>Heavy Duty Durable Webbing Strap Firefighter Turnout Gear Glove strap has extra-long length 12 ½”

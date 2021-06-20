@@ -39,8 +39,8 @@
                     <option>Medium</option>
                     <option>Small</option>
                 </select>
-                <input type="number" value="1">
-                <a href="" class="btn">Add To Cart</a>
+                <input id="amount" type="number" value="1">
+                <a class="btn" onclick="multipleAddToCart(6)">Add To Cart</a>
                 <h3>Product Details</h3>
                 <br>
                 <p>CLEARLY MARKED AS FR – clear FR marking on front pocket. The Fabric Is Treated To Make It Fire

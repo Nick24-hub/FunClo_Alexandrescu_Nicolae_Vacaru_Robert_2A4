@@ -27,6 +27,7 @@ session_start();
                         <li><a href="index.php">Home</a></li>
                         <li><a href="Shop.php">Shop</a></li>
                         <li><a href="contact.php">Contact</a></li>
+    
                         <?php
                         if (isset($_SESSION["userUid"])) {
                             echo "<li><a href='profile.php'>Profile</a></li>";

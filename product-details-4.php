@@ -39,8 +39,8 @@
                     <option>Medium</option>
                     <option>Small</option>
                 </select>
-                <input type="number" value="1">
-                <a href="" class="btn">Add To Cart</a>
+                <input id="amount" type="number" value="1">
+                <a class="btn" onclick="multipleAddToCart(3)">Add To Cart</a>
                 <h3>Product Details</h3>
                 <br>
                 <p>Highly Quality Neoprene Wetsuit--- Made of premium 3mm neoprene and nylon fabric, stretchable and

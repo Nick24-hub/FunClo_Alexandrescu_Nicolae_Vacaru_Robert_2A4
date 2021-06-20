@@ -30,8 +30,8 @@
                     <option>Select Size</option>
                     <option>One Size</option>
                 </select>
-                <input type="number" value="1">
-                <a href="" class="btn">Add To Cart</a>
+                <input id="amount" type="number" value="1">
+                <a class="btn" onclick="multipleAddToCart(4)">Add To Cart</a>
                 <h3>Product Details</h3>
                 <br>
                 <p>EXTREME DURABILITY Made with 1000D polyester to keep turnout gear, helmet, and other gear clean and

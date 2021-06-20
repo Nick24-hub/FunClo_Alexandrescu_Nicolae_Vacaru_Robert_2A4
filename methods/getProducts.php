@@ -1,4 +1,5 @@
 <?php
+
 include_once dirname(__FILE__) . '/../models/product.php';
 include_once dirname(__FILE__) . '/../includes/dbh.inc.php';
 
@@ -11,10 +12,10 @@ if ($nr > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
 
         $post_item = array(
-            'id' => $id,
-            'title' => $title,
-            'details' => $details,
-            'price' => $price
+            'id' => $row['id'],
+            'title' => $row['title'],
+            'details' => $row['details'],
+            'price' => $row['price']
         );
 
         array_push($products, $post_item);

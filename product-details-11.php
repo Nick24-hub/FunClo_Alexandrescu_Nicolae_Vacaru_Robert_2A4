@@ -32,8 +32,8 @@
                     <option>Select Size</option>
                     <option>One Size</option>
                 </select>
-                <input type="number" value="1">
-                <a href="" class="btn">Add To Cart</a>
+                <input id="amount" type="number" value="1">
+                <a class="btn" onclick="multipleAddToCart(10)">Add To Cart</a>
                 <h3>Product Details</h3>
                 <br>
                 <p>Fashion Integrated frame snorkel mask with double lens offers a 180 degree superior view for
