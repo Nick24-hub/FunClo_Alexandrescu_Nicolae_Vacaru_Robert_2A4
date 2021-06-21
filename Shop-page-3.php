@@ -8,7 +8,15 @@
     <div class="small-container all-products">
         <div class="row row-2">
             <h2>All Products</h2>
-            <select>
+            <div class="filter-box">
+            <a href="Shop.php" class="btn-filter" data-filter="all">All</a>
+                <a href="Ski.php" class="btn-filter" data-filter="Ski Equipment">Ski Equipment</a>
+                <a href="Diving.php" class="btn-filter" data-filter="Diving Equipment">Diving Equipment</a>
+                <a href="Worker.php" class="btn-filter" data-filter="Worker Safety Equipment">Worker Safety Equipment</a>
+                <a href="Firefighter.php" class="btn-filter" data-filter="Firefighter Safety Equipment">Firefighter Safety Equipment</a>
+
+            </div>
+            <!-- <select>
                 <option>All Categories</option>
                 <option>Ski Equipment</option>
                 <option>Diving Equipment</option>
@@ -20,7 +28,7 @@
                 <option>Sort by Popularity</option>
                 <option>Sort by rating</option>
                 <option>Sort by sale</option>
-            </select>
+            </select> -->
         </div>
         <div class="row">
             <div class="col4">

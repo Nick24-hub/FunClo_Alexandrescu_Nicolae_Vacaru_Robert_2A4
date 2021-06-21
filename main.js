@@ -1,8 +1,7 @@
-
 let products = [];
 
-function getEventsData() {
-    const response = fetch(`http://localhost/1/FunClo_Alexandrescu_Nicolae_Vacaru_Robert_2A4/methods/getProducts.php`)
+function getProducts() {
+    const response = fetch(`http://localhost/FunClo_Alexandrescu_Nicolae_Vacaru_Robert_2A4/methods/getProducts.php`)
         .then((res) => res.json())
         .then((res) => {
             for (let i = 0; i < res.length; ++i) {
@@ -18,9 +17,10 @@ function getEventsData() {
         })
 };
 
-getEventsData();
+getProducts();
 
 var i;
+
 
 function removeToCart(i) {
     removeItemTotalCost(products[i]);
