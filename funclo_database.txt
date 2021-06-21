@@ -192,3 +192,13 @@ WHERE id = 11;
 UPDATE product
 SET small_desc = 'Humble Bee 410 Polycotton Beekeeping Suit with Round Veil'
 WHERE id = 12;
+
+CREATE TABLE orders (
+    idOrder int(11) not null PRIMARY KEY AUTO_INCREMENT,
+    userId int(11) not null,
+    name varchar(255) not null,
+   	phone varchar(100) not null,
+    address varchar(100) not null,
+    productsInCart json not null,
+    totalCosts varchar(100) not null
+);

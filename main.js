@@ -223,8 +223,6 @@ function displayCart() {
     let totalContainer = document.querySelector(".total-price");
     let buy = document.querySelector(".buy");
     let buy1 = document.querySelector(".buy1");
-    console.log(buy1);
-    console.log(buy);
     let cartCost = localStorage.getItem('totalCost');
 
     if (cartItems && productContainer) {

@@ -101,7 +101,7 @@
             exit();
           }
         $pwdHashed = $uidExists["userPwd"];
-        $checkPwd = pwdMatch($pwd,$pwdHashed);
+        $checkPwd = password_verify($pwd,$pwdHashed);
         if($checkPwd==false)
         {
             header("location: ../account.php?error=wrongLogin");
