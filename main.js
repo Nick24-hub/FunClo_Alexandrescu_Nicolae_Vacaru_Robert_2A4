@@ -1,9 +1,8 @@
 
-
 let products = [];
 
 function getEventsData() {
-    const response = fetch(`http://localhost/FunClo_Alexandrescu_Nicolae_Vacaru_Robert_2A4/methods/getProducts.php`)
+    const response = fetch(`http://localhost/1/FunClo_Alexandrescu_Nicolae_Vacaru_Robert_2A4/methods/getProducts.php`)
         .then((res) => res.json())
         .then((res) => {
             for (let i = 0; i < res.length; ++i) {
@@ -276,10 +275,20 @@ function displayCart() {
         </div>
         `
         buy.innerHTML += `
-        <a href="">Buy</a>
+        <a href="submit-order.php">Buy</a>
         `
     }
 }
+function submit(){
+    console.log("1");
+    var Customer_ = {};  
+    Customer_.Name = $("#name").val();  
+    Customer_.Address=$("#address").val();
+    
+    var ItemId = "Cst" + Customer_.Name;  
+    localStorage.setItem(ItemId, JSON.stringify(Customer_));  
+
+};
 
 onLoadCartNumbers();
 displayCart();

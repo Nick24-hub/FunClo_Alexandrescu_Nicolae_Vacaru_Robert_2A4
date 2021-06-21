@@ -16,7 +16,8 @@
                 <div class="footer-col3">
                     <h3>Useful Links</h3>
                     <ul>
-                        <li>Coupons</li>
+                        <a href="..\csv\product.csv" download="product.csv">
+                        Download products as CSV file</button></a>
                         <li>Blog Post</li>
                         <li>Return Policy</li>
                         <li>Join Affiliate</li>
