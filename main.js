@@ -1,7 +1,7 @@
 let products = [];
 
 function getProducts() {
-    const response = fetch(`http://localhost/FunClo_Alexandrescu_Nicolae_Vacaru_Robert_2A4/methods/getProducts.php`)
+    const response = fetch(`http:../FunClo_Alexandrescu_Nicolae_Vacaru_Robert_2A4/methods/getProducts.php`)
         .then((res) => res.json())
         .then((res) => {
             for (let i = 0; i < res.length; ++i) {
@@ -222,6 +222,9 @@ function displayCart() {
     let productContainer = document.querySelector(".x");
     let totalContainer = document.querySelector(".total-price");
     let buy = document.querySelector(".buy");
+    let buy1 = document.querySelector(".buy1");
+    console.log(buy1);
+    console.log(buy);
     let cartCost = localStorage.getItem('totalCost');
 
     if (cartItems && productContainer) {
@@ -273,21 +276,33 @@ function displayCart() {
             </tr>
         </table>
         </div>
-        `
-        buy.innerHTML += `
-        <a href="submit-order.php">Buy</a>
-        `
+        `;
+        if (buy1 == null) {
+            buy.innerHTML += `
+                <a href="submit-order.php">Buy</a>
+        `;
+        }
+        else {
+            buy1.innerHTML += `
+                <a href="account.php">Login First</a>
+        `;
+        }
+
     }
 }
-function submit(){
+function clearLogout()
+{
+    localStorage.clear();
+}
+function submit() {
     console.log("1");
-    var Customer_ = {};  
-    Customer_.Name = $("#name").val();  
-    Customer_.Address=$("#address").val();
-    
-    var ItemId = "Cst" + Customer_.Name;  
-    localStorage.setItem(ItemId, JSON.stringify(Customer_));  
+    var Customer_ = {};
+    Customer_.Name = $("#name").val();
+    Customer_.Address = $("#address").val();
 
+    var ItemId = "Cst" + Customer_.Name;
+    localStorage.setItem(ItemId, JSON.stringify(Customer_));
+    
 };
 
 onLoadCartNumbers();

@@ -29,4 +29,5 @@ document.getElementById("order-submit").addEventListener("click", function () {
 
         }
     });
+    localStorage.clear();
 });

@@ -13,7 +13,7 @@
                 <th>Quantity</th>
                 <th>Subtotal</th>
             </tr>
-            
+
             <!-- <tr>
                 <td>
                     <div class="cart-info">
@@ -37,9 +37,20 @@
         <div class="total-price">
 
         </div>
-        <div class="buy">
-            <!-- <a href="">Buy</a> -->
-        </div>
+        <?php
+        ini_set('error_reporting', 0);
+        ini_set('display_errors', 0);
+        $var = null;
+        if (isset($_SESSION["userUid"])) {
+            $var = $_SESSION["userUid"];
+        }
+        if ($var != null) {
+            echo "<div class='buy'></div>";
+        } else {
+            echo "<div class='buy1'></div>";
+        }
+        ?>
+
     </div>
 
     <!-- footer -->

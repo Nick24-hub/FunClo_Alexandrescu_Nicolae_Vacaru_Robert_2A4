@@ -387,6 +387,23 @@ th:last-child{
     text-align: right;
 }
 
+.buy1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy1 a{
+    width: 200px;
+    background: #ff523b;
+    color:white;
+    display:block;
+    font-size: 20px;
+    margin-top: 25px;
+    padding: 15px 80px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 
 .buy{
     display: flex;

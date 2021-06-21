@@ -29,6 +29,14 @@ session_start();
                 <input type="text" id="address"  placeholder="Address">
                 <input type="text" id="phone"  placeholder="Phone Number">
                 <button type="submit" id="order-submit" name="order-submit"  class="btn">Submit</button>
+                <?php
+                            if (isset($_GET["order-submit"])) {
+                                if ($_GET["order-submit"] == "") { {
+                                        echo '<h2>Order submited!</h2>';
+                                    }
+                                }
+                            }
+                            ?>
             </form>
         </div>
     </div>

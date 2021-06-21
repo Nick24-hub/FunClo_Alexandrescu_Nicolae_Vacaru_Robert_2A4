@@ -1,5 +1,5 @@
 const  displayProducts = async () => {
-    var apiResponse = await fetch(`http://localhost/FunClo_Alexandrescu_Nicolae_Vacaru_Robert_2A4/methods/getDivingProducts.php`);
+    var apiResponse = await fetch(`../FunClo_Alexandrescu_Nicolae_Vacaru_Robert_2A4/methods/getDivingProducts.php`);
     var items = await apiResponse.json(); // This is also a promise so must also wait for it
 
     let productRow = document.querySelector("div.row:not(.row-2)");
