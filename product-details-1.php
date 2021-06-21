@@ -28,12 +28,14 @@
             </div>
             <div class="col2">
                 <p>Head Protection Equipment</p>
-                <h1> <?php
-                        $sql = "SELECT title FROM product where id=1;";
-                        $result = mysqli_query($conn, $sql);
-                        $row = mysqli_fetch_assoc($result);
-                        echo $row['title'];
-                        ?></h1>
+                <h1>
+                    <?php
+                    $sql = "SELECT title FROM product where id=1;";
+                    $result = mysqli_query($conn, $sql);
+                    $row = mysqli_fetch_assoc($result);
+                    echo $row['title'];
+                    ?>
+                </h1>
                 <h4>$26.99</h4>
                 <select>
                     <option>Select Size</option>

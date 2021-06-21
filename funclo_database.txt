@@ -6,7 +6,6 @@ CREATE TABLE users (
   userPwd varchar(128) NOT null
 );
 
-
 CREATE TABLE product (
     id int(11) not null PRIMARY KEY AUTO_INCREMENT,
     title varchar(255) not null,
@@ -76,3 +75,120 @@ INSERT INTO product (title, details, price) VALUES ('Humble Bee 410', 'Polycotto
 Medium-weight 50% cotton / 50% synthetic blend (280 gsm) provides outstanding protection against bee stings, plus all-day comfort in most weather conditions.
 Tailored fit with an elastic waist, elastic wrists, and elastic ankles, plus thumb and foot holds to keep everything comfortably in place.
 Unisex design for men and women between 5\'11" - 6\'1" (180 - 185 cm), with removable veil for easy cleaning and storage.', 139.95);
+
+CREATE TABLE pwdReset (
+  pwdResetId int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  pwdResetEmail TEXT NOT null,
+  pwdResetSelector TEXT NOT null,
+  pwdResetToken LONGTEXT NOT NULL,
+  pwdResetExpires TEXT NOT NULL
+);
+
+CREATE TABLE contact (
+  contactId int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  name LONGTEXT not null,
+  userEmail LONGTEXT not null,
+  textContact LONGTEXT not null
+);
+
+ALTER TABLE product
+ADD type varchar(50);
+
+UPDATE product
+SET type = 'Worker Safety Equipment'
+WHERE id = 1;
+
+UPDATE product
+SET type = 'Worker Safety Equipment'
+WHERE id = 2;
+
+UPDATE product
+SET type = 'Ski Equipment'
+WHERE id = 3;
+
+UPDATE product
+SET type = 'Diving Equipment'
+WHERE id = 4;
+
+UPDATE product
+SET type = 'Firefighter Safety Equipment'
+WHERE id = 5;
+
+UPDATE product
+SET type = 'Firefighter Safety Equipment'
+WHERE id = 6;
+
+UPDATE product
+SET type = 'Firefighter Safety Equipment'
+WHERE id = 7;
+
+UPDATE product
+SET type = 'Worker Safety Equipment'
+WHERE id = 8;
+
+UPDATE product
+SET type = 'Firefighter Safety Equipment'
+WHERE id = 9;
+
+UPDATE product
+SET type = 'Worker Safety Equipment'
+WHERE id = 10;
+
+UPDATE product
+SET type = 'Diving Equipment'
+WHERE id = 11;
+
+UPDATE product
+SET type = 'Worker Safety Equipment'
+WHERE id = 12;
+
+ALTER TABLE product
+ADD small_desc varchar(1000);
+
+UPDATE product
+SET small_desc = 'JORESTECH Hard Hat White ABS Work-At-Height and Rescue Slotted Ventilated Helmet with 6-Point Ratchet Suspension ANSI Z89.1-14 Certified For Work, Home, and General Headwear Protection HHAT-04'
+WHERE id = 1;
+
+UPDATE product
+SET small_desc = 'Humble Bee 210 Polycotton Beekeeping Veil with Round Hat'
+WHERE id = 2;
+
+UPDATE product
+SET small_desc = 'TSLA Men\'s Winter Ski Jacket, Waterproof Warm Insulated Snow Coats, Cold Weather Windproof Snowboard Jacket with Hood'
+WHERE id = 3;
+
+UPDATE product
+SET small_desc = 'COPOZZ Wetsuit for Men and Women 3mm Neoprene Full Wetsuit, Back Zip Long Sleeve One Piece Wetsuit Jumpsuit for Scuba Diving Surfing Snorkeling'
+WHERE id = 4;
+
+UPDATE product
+SET small_desc = 'Ergodyne Arsenal 5005P Large Polyester Firefighter Rescue Turnout Fire Gear Bag with Shoulder Strap and Helmet Pocket'
+WHERE id = 5;
+
+UPDATE product
+SET small_desc = 'LINE2design Firefighter Glove Strap - Emergency Rescue Turnout Gear Heavy Duty Reflective Gloves Safety Leash - First Responders EMTs Construction and Mechanics Adjustable Work Glove Holder - Green'
+WHERE id = 6;
+
+UPDATE product
+SET small_desc = 'Ur Shield FR Shirt - Fire Resistant Shirt - Work Shirt - Welding Shirt XL, Navy Blue Fire Retardant Shirt - FR Clothing for Welders & Electricians'
+WHERE id = 7;
+
+UPDATE product
+SET small_desc = 'McGuire-Nicholas 526-CC Brown Professional Electrician\'S Pouch, oil tanned leather'
+WHERE id = 8;
+
+UPDATE product
+SET small_desc = 'Firefighter Training Regulator | Breathing Resistance XRT Pro 2.0 Trainer for Scott AV-2000 & AV-3000 SCBA Mask'
+WHERE id = 9;
+
+UPDATE product
+SET small_desc = 'Stethoscope Holder pro with Clip,Handmade in USA Genuine Leather .Perfect for Physicians, Nurses, EMT, Medical Nursing Student. No More Neck Carrying, Work with Comfort'
+WHERE id = 10;
+
+UPDATE product
+SET small_desc = 'COPOZZ Scuba Mask, No Fogging Snorkeling Scuba Dive Glasses, Great Seal Free Diving Tempered Glass Mask Goggles'
+WHERE id = 11;
+
+UPDATE product
+SET small_desc = 'Humble Bee 410 Polycotton Beekeeping Suit with Round Veil'
+WHERE id = 12;
