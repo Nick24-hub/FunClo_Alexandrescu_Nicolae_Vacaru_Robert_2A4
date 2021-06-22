@@ -1,3 +1,4 @@
+let myBarChart;
 
 const getItems = async (page) => {
 
@@ -36,7 +37,7 @@ function displayChart() {
     };
 
 
-    var myBarChart = new Chart(canvas, {
+    myBarChart = new Chart(canvas, {
         type: 'bar',
         data: data,
         options: option
@@ -44,6 +45,27 @@ function displayChart() {
 }
 
 displayChart();
+
+
+function downloadSVG(args) {
+    let data, link;
+    myBarChart = args.chart;
+    data = encodeURI(myBarChart.toBase64Image("image/jpeg", 1));
+    link = document.createElement("a");
+    link.setAttribute("href", data);
+    link.setAttribute("download", "chart-data.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+  
+  const downloadButtonSVG = document.getElementById("SVG");
+  
+  downloadButtonSVG.addEventListener("click", (event) => {
+    downloadSVG({
+      chart: myBarChart,
+    });
+  });
 
 
 
