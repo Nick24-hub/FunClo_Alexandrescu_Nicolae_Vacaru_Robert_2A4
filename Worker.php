@@ -12,7 +12,7 @@
                 <a href="Shop.php" class="btn-filter" data-filter="all">All</a>
                 <a href="Ski.php" class="btn-filter" data-filter="Ski Equipment">Ski Equipment</a>
                 <a href="Diving.php" class="btn-filter" data-filter="Diving Equipment">Diving Equipment</a>
-                <a href="Worker.php" class="btn-filter" data-filter="Worker Safety Equipment">Worker Safety Equipment</a>
+                <a href="Worker.php" class="current btn-filter" data-filter="Worker Safety Equipment">Worker Safety Equipment</a>
                 <a href="Firefighter.php" class="btn-filter" data-filter="Firefighter Safety Equipment">Firefighter Safety Equipment</a>
 
             </div>
