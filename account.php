@@ -50,6 +50,9 @@
                                 } else if ($_GET["error"] = "wrongLogin") {
                                     echo "<a>Incorrect Login credentials!</a>";
                                 } 
+                                else if ($_GET["newpwd"] == "passwordupdated"){ 
+                                    echo '<a>Your password has been reset!</a>';
+                                }
                                 else if ($_GET["error"] == "invalidUid")
                                     echo "<p>You entered an invalid Uid!</p>";
                                 else if ($_GET["error"] == "invalidEmail")
