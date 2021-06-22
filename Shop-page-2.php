@@ -15,7 +15,7 @@
                 <a href="Worker.php" class="btn-filter" data-filter="Worker Safety Equipment">Worker Safety Equipment</a>
                 <a href="Firefighter.php" class="btn-filter" data-filter="Firefighter Safety Equipment">Firefighter Safety Equipment</a>
             </div>
-            <!-- <select>
+             <!-- <select>
                 <option>All Categories</option>
                 <option>Ski Equipment</option>
                 <option>Diving Equipment</option>
@@ -27,8 +27,8 @@
                 <option>Sort by Popularity</option>
                 <option>Sort by rating</option>
                 <option>Sort by sale</option>
-            </select>
-        </div> -->
+            </select> -->
+        </div> 
         <div class="row">
             <div class="col4">
                 <a href="product-details-5.php">

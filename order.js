@@ -5,7 +5,7 @@ document.getElementById("order-submit").addEventListener("click", function () {
     var address = document.getElementById("address").value;
     var phone = document.getElementById("phone").value;
     localStorage.setItem("name",document.getElementById("name").value);
-    var productsInCart = localStorage.getItem('productsInCart'); // This gets the value of the form once it has been posted to the .php file
+    var productsInCart = localStorage.getItem('productsInCart'); 
     var totalCosts = localStorage.getItem('totalCost');
     $.ajax({
         url: "addOrder.php",

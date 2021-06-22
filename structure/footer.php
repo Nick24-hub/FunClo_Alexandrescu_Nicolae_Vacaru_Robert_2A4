@@ -18,7 +18,7 @@
                     <ul>
                         <a href="..\csv\product.csv" download="product.csv">
                         Download products as CSV file</button></a>
-                        <li>Blog Post</li>
+                        <li><a href="statistics.php">View Statistics</a></li>
                         <li>Return Policy</li>
                         <li>Join Affiliate</li>
                     </ul>
