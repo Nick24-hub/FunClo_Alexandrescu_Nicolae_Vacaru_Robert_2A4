@@ -1,5 +1,5 @@
 <?php
-require 'C:\Users\nicu2\xampp\composer\vendor\autoload.php';
+require 'C:\Users\JohnSmith\xampp\composer\vendor\autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 

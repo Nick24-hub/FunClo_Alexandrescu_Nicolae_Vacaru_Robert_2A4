@@ -14,15 +14,7 @@ session_start();
 </head>
 
 <body>
-<?php if (isset($_GET["error"])) {
-        if ($_GET["error"] = "emptyinput")
-            echo "<h2>Fill in all fields!</h2>";
-        else if ($_GET["error"] = "stmtFailed")
-            echo "<p>Something went wrong!</p>";
-        else if ($_GET["error"] = "none")
-            echo "<p>You signed up!</p>";
-    }
-    ?>
+
     <?php include 'structure/header.php'; ?>
     <div class="contact">
         <div class="contact-text">
@@ -32,6 +24,15 @@ session_start();
                 <input type="text" name="email" placeholder="Email">
                 <input type="text" name="text" placeholder="Text">
                 <button type="submit" name="contact-submit" class="btn">Contact</button>
+                <?php if (isset($_GET["error"])) {
+                    if ($_GET["error"] =="emptyinput")
+                        {echo "<h2>Fill in all fields!</h2>";}
+                    else if ($_GET["error"] == "stmtFailed")
+                        {echo "<h2>Something went wrong!</h2>";}
+                    else if ($_GET["error"] == "none")
+                        {echo "<h2>You submitted the form the corect way!</h2>";}
+                }
+                ?>
             </form>
 
             <!-- <div class="contact-items" action="includes/contact.inc.php" method="POST">

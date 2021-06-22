@@ -1,0 +1,367 @@
+
+  
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <link rel="icon" href="../Poze/logo.png" type="image/x-icon" sizes="16x16"> -->
+    <title>FunClo</title>
+    
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1>FunClo- Scholarly HTML Report</h1>
+        </header>
+        <div role =" contentinfo">
+            <ol role="directory">
+                <li>
+                    <a href="#1">
+                        
+                        Introduction
+                    </a>
+                </li>
+                <li>
+                    <a href="#2">
+                        
+                        Overall Description
+                    </a>
+                </li>
+                <li>
+                    <a href="#3">
+                       
+                        External Interface Requirements
+                    </a>
+                </li>
+                <li>
+                    <a href="#4">
+                        
+                        System Features
+                    </a>
+                </li>
+            </ol>
+        </div>
+        <div role="contentinfo" id ="1">
+            <section role="doc-introduction">
+                <h2>1. Introduction</h2>
+                <section>
+                    <h3>1.1 Purpose</h3>
+                    <p>Acest document a fost creat pentru a descrie site-ul FunClo , din cadrul materiei Tehnologii Web.
+                    </p>
+                </section>
+                <section>
+                    <h3>1.2 Document Conventions</h3>
+                    <p>Formatul acestui document este <a href="https://w3c.github.io/scholarly-html/">Scholarly
+                            HTML</a>, construit conform specificatiilor precizate in macheta <a href="https://github.com/rick4470/IEEE-SRS-Tempate">IEEE System Requirements Specification
+                            Template</a> .
+                    <div></div><div></div>
+                </section>
+                <section>
+                    <h3>1.3 Intended Audience and Reading Suggestions </h3>
+                    <p>Audienta-tinta a aplicatiei noastre este alcatuita , in principal , de persoanele care vor sa-si achizitioneze echipamente specifice anumitor activitati,care pot necesita o oarecare protectie.</p>
+                    <p> Raportul contine o descriere generala a aplicatiei
+                        , urmata de descrierea interfetelor externe ale aplicatiei , precum si constrangerile acestora .
+                    </p>
+                </section>
+                <section>
+                    <h3>1.4 Product Scope</h3>
+                    <p>Scopul aplicatiei este de a oferi utilizatorului un inventar cu produse pe care le poate sorta ,iar prin intermediul unui cont acesta poate achizitiona produsele.
+                         Totodata utilizatorul poate sa vada diferite statistici legate de produsele respective.
+
+                    </p>
+                </section>
+                <section role="doc-bibliography">
+                    <h3>1.5 References</h3>
+                    <p>Pentru a construi aplicatia noastra , am folosit indrumarea catorva informatii din urmatoarea lista de pagini WEB : </p>
+                    <ul>
+                        <li><a href="https://css-tricks.com">https://css-tricks.com</a></li>
+                        <li><a href="https://stackoverflow.com">https://stackoverflow.com</a></li>
+                        <li><a href="https://www.w3schools.com">https://www.w3schools.com</a></li>
+                        <li><a href="https://github.com/PHPMailer/PHPMailer">https://github.com/PHPMailer/PHPMailer</a></li>
+                        </li>
+                        <li><a href="https://www.youtube.com">https://www.youtube.com</a></li>
+                        <li><a href="https://www.amazon.com/"></a><https://www.amazon.com//li>
+                        <li>Google Image Search sau Amazon , pentru fiecare poza sau informatie despre produse din proiect.</li>
+                    </ul>
+                </section>
+            </section>
+            <section id = "2">
+                <h2>
+                    2. Overall Description
+                </h2>
+                <section>
+                    <h3>
+                        2.1 Product perspective
+                    </h3>
+                    <p>
+                        <!-- descriere a site-ului-->
+                    </p>
+                    <figure typeof="sa:image">
+                        <img src="../images/Documentatie/Application_Diagram.png" style="width: 1200px;">
+                        <figcaption>Fig. 1 - Application Diagram</figcaption>
+                    </figure>
+                    <figure typeof="sa:image">
+                        <img src="../Poze/Poze_Documentatie/Diagrame/UseCase.png" style="width: 1200px;">
+                        <figcaption>Fig. 2 - UseCase Diagram</figcaption>
+                    </figure>
+                    <figure typeof="sa:image">
+                        <img src="../Poze/Poze_Documentatie/Diagrame/Uml.png" style="width: 650px;">
+                        <figcaption>Fig. 3 - UML Simple Diagram</figcaption>
+                    </figure>
+                    <!-- diagramele-->
+                </section>
+                <section>
+                    <h3>
+                        2.2 Product functions
+                    </h3>
+                    <ul>
+                        <li>
+                            Register
+                        </li>
+                        <li>
+                            Login
+                        </li>
+                        <li>
+                            Add to Cart
+                        </li>
+                        <li>Delete from Cart</li>
+                        <li>Change quantity of products from cart</li>
+                        <li>Insert multiple products at once in the cart</li>
+                        <li>Remove a specific quantity of products from the cart</li>
+                        <li>See product's information</li>
+                        <li>Sort using sorting categories</li>
+                        <li>View Statistics</li>
+                        <li>Download Statistics as CSV</li>
+                        <li>Request a change password link</li>
+                        <li>Change account password</li>
+                        <li>Log Out</li>
+                        <li>Add Order to DB</li>
+                       
+                    </ul>
+                </section>
+                <section>
+                    <h3>
+                        2.3 User Classes and Characteristics
+                    </h3>
+                    <p>
+                        FunClo este o platforma destinata personelor care vor sa-si achizitioneze echipamente specifice anumitor activitati,care pot necesita o oarecare protectie.
+                    </p>
+                </section>
+                <section>
+                    <h3>
+                        2.4 Operating Environment
+                    </h3>
+                    <p>
+                        Site-ul este functional pe toate sistemele de operare de tip Windows, Linux sau MacOS, atat pe telefoane sau tabletele cu Android cat si IOS.
+                    </p>
+                </section>
+                <section>
+                    <h3>
+                        2.5 Design and Implementation Constraints
+                    </h3>
+                    <p>
+                        In momentul de fata nu avem o modalitate prin care sa adaugi produse direct de pe site in baza de date si nu avem o modalitate prin care sa vezi comenzile. 
+                    </p>
+                </section>
+                <section>
+                    <h3>
+                        2.6 User Documentation
+                    </h3>
+                    <p> Instruirea utilizatorului se va face prin intermediului ghidului oferit de echipa FunClo.</p>
+                </section>
+                <section>
+                    <h3>
+                        2.7 Assumptions and Dependencies
+                    </h3>
+                    <p>
+                      Anumite poze, scripturi si baza de date folosite sunt locale.<br> 
+                      <a>Folosim un script extern pentru grafice numit <a href="https://www.chartjs.org/">Chart.js</a>si o librarie pentru trimiterea de mail numita <a href="https://github.com/PHPMailer/PHPMailer"> PHPMailer</a>.</a>
+                    </p>
+                </section>
+            </section>
+            <section role="presentation" id = "3">
+                <h2>
+                    3. External Interface Requirements
+                </h2>
+                <h3>
+                    3.1 User Interfaces
+                </h3>
+                <p> In cele ce urmeaza, voi prezenta fiecare interfata a aplicatiei cu utilizatorul! </p>
+
+                <h4> 3.1.1 Login Page </h4>
+                <p>
+                    Pagina Account reprezinta interfata de logare a utilizatorului pe platforma, cu scopul de a accesa anumite functionalitati aplicatiei.
+                    Pe langa field-urile Username si Password (de tip text, respectiv password) mai exista si butonul de Sign Up, care va redirecta userul catre formularul de register!
+                    In final, butonul de Submit, care va incerca logarea cu datele furnizate in field-uri! 
+                </p>
+                <figure typeof="sa:image">
+                    <img src="../images/Documentatie/login.png" style="width: 650px;">
+                    <figcaption>Fig. 1 - Account Page</figcaption>
+                </figure>
+
+                <h4> 3.1.2 Sign Up Modal</h4>
+                <p>
+                    Modalul de Sign up reprezinta locul in care se poate crea un nou cont in baza de date a aplicatiei. Se cere furnizarea de catre utilizator a unui username, a unei parole, o adresa de e-mail, precum si un nume si un prenume.
+                    Pentru a continua trebuie sa apese pe butonul de Sign up!
+                    Daca acesta in schimb apasa pe butonul de Login, va fi redirectionat inapoi la Login.
+                </p>
+                <figure typeof="sa:image">
+                    <img src="../images/Documentatie/register.png" style="width: 650px;">
+                    <figcaption>Fig. 1 - Sign Up</figcaption>
+                </figure>
+                <br>
+
+                <h4> 3.1.3 Home Page</h4>
+                <p>
+                    Aceasta pagina are rolul de a intampina orice utilizator.
+                </p>
+                <figure typeof="sa:image">
+                    <img src="../images/Documentatie/home.png" style="width: 650px;">
+                    <figcaption>Fig. 1 - Home Page</figcaption>
+                </figure>
+                <h4> 3.1.4 Shop Page</h4>
+                <p>Dupa cum se poate observa in Fig. 2, utilizatorul are la dispozitie mai multe filtre pentru a sorta produsele si butoanele pentru a se misca de pe o pagina pe alta.</p>
+                <figure typeof="sa:image">
+                    <img src="../images/Documentatie/shop.png" style="width: 650px;">
+                    <figcaption>Fig. 2 - Shop Buttons</figcaption>
+                </figure>
+                <p>Dupa selectarea unui filtru.</p>
+                <figure typeof="sa:image">
+                    <img src="../images/Documentatie/firefighter.png" style="width: 650px;">
+                    <figcaption>Fig. 3 - Filtered</figcaption>
+                </figure>
+                <p>Pagina unui produs.
+                    Butonul Add to Cart: Va insera in cart produsul respectiv cat si cantitatea selectata.(vezi Fig. 4)</p>
+                <figure typeof="sa:image">
+                    <img src="../images/Documentatie/product.png" style="width: 650px;">
+                    <figcaption>Fig. 4 - Product</figcaption>
+                </figure>
+                <h4> 3.1.5 Cart Page</h4>
+                <p>
+                    Putem observa functionalitatile cosului.
+                </p>
+                <figure typeof="sa:image">
+                    <img src="../images/Documentatie/cart.png" style="width: 650px;">
+                    <figcaption>Fig.5- Cart</figcaption>
+                </figure>
+                <p>
+                    In cazul in care nu esti logat.
+                </p>
+                <figure typeof="sa:image">
+                    <img src="../images/Documentatie/login_first.png" style="width: 650px;">
+                    <figcaption>Fig.6 - Login in First</figcaption>
+                </figure>
+                <p>
+                    Achizitionarea produselor.
+                </p>
+                <figure typeof="sa:image">
+                    <img src="../images/Documentatie/order.png" style="width: 650px;">
+                    <figcaption>Fig.7 - Buy</figcaption>
+                </figure>
+                
+                <h4> 3.1.5 Forgot Password Page</h4>
+                <p>
+                    Introducem email-ul pentru a ni se reseta parola.
+                </p>
+                <figure typeof="sa:image">
+                    <img src="../images/Documentatie/forgot.png" style="width: 650px;">
+                    <figcaption>Fig.8 - Forgot</figcaption>
+                </figure>
+                <p>
+                    Email-ul primit.
+                </p>
+                <figure typeof="sa:image">
+                    <img src="../images/Documentatie/email.png" style="width: 650px;">
+                    <figcaption>Fig.8 - Email</figcaption>
+                </figure>
+                <p>
+                    Resetarea parolei.
+                </p>
+                <figure typeof="sa:image">
+                    <img src="../images/Documentatie/reset.png" style="width: 650px;">
+                    <figcaption>Fig.9 -Resset Pwd</figcaption>
+                </figure>
+                <h4> 3.1.6 Contact Page</h4>
+                <p>
+                    Pagina de contact.
+                </p>
+                <figure typeof="sa:image">
+                    <img src="../images/Documentatie/contact.png" style="width: 650px;">
+                    <figcaption>Fig.10 -Contact</figcaption>
+                </figure>
+                
+                <h3>
+                    3.2 Hardware Interfaces
+                </h3>
+                <h4>
+                    3.2.1 Browser Interaction
+                </h4>
+                <p>
+                    Interactiunea cu diferitele tipuri de browser este aceeasi in fiecare caz. 
+                    Versiunea cea mai stabila este Google Chrome (browser-ul folosit de noi pentru debug), insa continutul ar trebui sa fie afisat in aceeasi maniera pentru fiecare tip de browser!
+                </p>
+                <h4>
+                    3.2.2 Devices Interaction
+                </h4>
+                <p>
+                    Atunci cand am proiectat paginile, cu ajutorul optiunilor "Inspect Element" din browserul Chrome, am incercat pe cat posibil sa implementam elementele in asa fel incat sa se vada bine pe orice tip de device (fie smartphone, tableta, laptop, 4K)!<br>                    Iata cateva exemple, pentru pagina de Index, pe unele tipuri de display!
+                </p>
+                <figure typeof="sa:image">
+                    <img src="../images/Documentatie/mobile.png" style="width: 650px;">
+                    <figcaption>Fig. 1 - Index Page on Mobile</figcaption>
+                </figure>
+                <figure typeof="sa:image">
+                    <img src="../images/Documentatie/tablet.png" style="width: 650px;">
+                    <figcaption>Fig. 2 - Index Page on Tablet</figcaption>
+                </figure>
+                <figure typeof="sa:image">
+                    <img src="../images/Documentatie/laptop.png" style="width: 650px;">
+                    <figcaption>Fig. 3 - Index Page on Laptop</figcaption>
+                </figure>
+                <figure typeof="sa:image">
+                    <img src="../images/Documentatie/4k.png" style="width: 650px;">
+                    <figcaption>Fig. 4 - Index Page on 4K</figcaption>
+                </figure>
+                <h3> 
+                    3.3 Software Interfaces
+                </h3>
+                    <a>Pentru implementarea Back-End a proiectului nostru, ne-am folosit de platforma XAMPP pentru a face legatura intre baza de date si aplicatie. Astfel am creat sase tabele pe care le voi enumera mai jos.</a>
+                    
+                <h3>
+                    3.4 Communications Interfaces
+                </h3>
+                <p>
+                    Pentru a accesa si a utiliza datele, am folosit request-uri HTTP(GET si POST).Am folosit apeluri $_GET pentru a extrage diferite informatii din baza de date si le-am gestionat astfel incat sa fie afisate in modul dorit.
+                </p>
+            </section>
+            <section role="doc-introduction" id = "4">
+                <h2>4. System Features</h2>
+                <section>
+                    
+                    <h3>4.1 Vacaru Stefan Robert's Contributions</h3>
+                    
+                    <h5>Front-End</h5>
+                    <dl>
+                        <dt>- Shop page</dt>
+                        <dt>- Gestionarea produselor pe celelalte pagini(Shop page 1, Shop page 2 ...)</dt>
+                        <dt>- Contact page</dt>
+                        <dt>- shop.css </dt>
+                        <dt> - contact.css</dt>
+                    </dl>
+                    <h5>Back-End</h5>
+                    <dl>
+                        <dt>-Pagina de account si gestionarea conturilor</dt>
+                        <dd>-Resetarea parolei prin intermediul unui link transmis pe email</dd>
+                        <dt>-Pagina de contact</dt>
+                        <dt>-Lucru pe statistici</dt>
+                    </dl>
+
+                    
+                </section>
+            </section>
+        </div>
+    </article>
+</body>
+</html>

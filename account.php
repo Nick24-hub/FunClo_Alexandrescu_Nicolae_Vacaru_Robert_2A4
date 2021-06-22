@@ -45,22 +45,22 @@
                             <button type="submit" name="register-submit" class="btn">Register</button>
                             <?php
                             if (isset($_GET["error"])) {
-                                if ($_GET["error"] = "emptyinput") {
+                                if ($_GET["error"] == "emptyinput") {
                                     echo "<a>Fill in all fields!</a>";
                                 } else if ($_GET["error"] = "wrongLogin") {
                                     echo "<a>Incorrect Login credentials!</a>";
                                 } 
-                                else if ($_GET["error"] = "invalidUid")
+                                else if ($_GET["error"] == "invalidUid")
                                     echo "<p>You entered an invalid Uid!</p>";
-                                else if ($_GET["error"] = "invalidEmail")
+                                else if ($_GET["error"] == "invalidEmail")
                                     echo "<p>You entered an invalid Email!</p>";
-                                else if ($_GET["error"] = "invalidMatchPwd")
+                                else if ($_GET["error"] == "invalidMatchPwd")
                                     echo "<p>You passwords don't match!</p>";
-                                else if ($_GET["error"] = "usernameTaken")
+                                else if ($_GET["error"] == "usernameTaken")
                                     echo "<p>You entered an username that is already in use!</p>";
-                                else if ($_GET["error"] = "stmtFailed")
+                                else if ($_GET["error"] == "stmtFailed")
                                     echo "<p>Something went wrong!</p>";
-                                else if ($_GET["error"] = "none")
+                                else if ($_GET["error"] == "none")
                                     echo "<p>You signed up!</p>";
                             }
                             ?>

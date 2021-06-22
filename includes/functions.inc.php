@@ -142,5 +142,5 @@
        mysqli_stmt_execute($stmt);
        mysqli_stmt_close($stmt);
        header("location: ../contact.php?error=none");
-        exit();
+       exit();
     }
